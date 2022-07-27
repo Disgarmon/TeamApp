@@ -37,6 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94901961089999998" green="0.75003082909959329" blue="0.25167367980924815" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellCartoon" textLabel="39X-GA-eEE" detailTextLabel="ASc-vE-8ix" style="IBUITableViewCellStyleSubtitle" id="Vz8-WJ-Cjq">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
@@ -107,7 +108,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dsz-GF-1Ur"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.94117647410000005" green="0.87692277218638315" blue="0.52092730771099827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dsz-GF-1Ur" firstAttribute="trailing" secondItem="CA9-O5-fBh" secondAttribute="trailing" constant="16" id="G8l-uh-4qV"/>
                             <constraint firstItem="dsz-GF-1Ur" firstAttribute="trailing" secondItem="xXX-yP-35T" secondAttribute="trailing" constant="16" id="RJ2-3u-a15"/>
@@ -155,7 +156,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1si-AO-dmf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="YXT-fg-J9d" firstAttribute="centerY" secondItem="JwE-wg-sd4" secondAttribute="centerY" id="nWI-cZ-DR0"/>
                             <constraint firstItem="YXT-fg-J9d" firstAttribute="centerX" secondItem="JwE-wg-sd4" secondAttribute="centerX" id="sjk-hD-Mrj"/>
@@ -216,7 +217,7 @@
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1uE-XW-9bG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94117647410000005" green="0.87692277220000003" blue="0.52092730769999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hcN-KQ-i9Q" firstAttribute="leading" secondItem="1uE-XW-9bG" secondAttribute="leading" id="10I-kg-LfR"/>
                             <constraint firstItem="bcR-XI-3iF" firstAttribute="top" secondItem="1uE-XW-9bG" secondAttribute="top" constant="30" id="2Wz-W0-eMk"/>
@@ -266,7 +267,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eAO-jR-yJI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94117647410000005" green="0.87692277220000003" blue="0.52092730769999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Ajk-qA-eWY" firstAttribute="centerY" secondItem="Dun-4p-iGj" secondAttribute="centerY" id="wH5-S7-dil"/>
                             <constraint firstItem="Ajk-qA-eWY" firstAttribute="centerX" secondItem="Dun-4p-iGj" secondAttribute="centerX" id="zJd-wM-0Mg"/>
@@ -288,6 +289,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTeam" textLabel="1gX-h6-QOO" detailTextLabel="WEZ-rT-5cV" style="IBUITableViewCellStyleSubtitle" id="awt-CJ-Pax">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
@@ -357,7 +359,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NES-5u-lVB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94117647410000005" green="0.87692277220000003" blue="0.52092730769999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Oye-TE-IqQ" firstAttribute="leading" secondItem="NES-5u-lVB" secondAttribute="leading" constant="16" id="1l6-nb-zwF"/>
                             <constraint firstItem="Oye-TE-IqQ" firstAttribute="top" secondItem="NES-5u-lVB" secondAttribute="top" constant="44" id="IgV-3c-H0Q"/>
@@ -402,7 +404,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zed-JS-oOh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ikP-dc-efM" firstAttribute="centerX" secondItem="tLm-WJ-fza" secondAttribute="centerX" id="Bqx-2W-HMm"/>
                             <constraint firstItem="IHu-VC-dal" firstAttribute="centerY" secondItem="tLm-WJ-fza" secondAttribute="centerY" id="DKm-rh-Cej"/>
@@ -485,9 +487,6 @@
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
