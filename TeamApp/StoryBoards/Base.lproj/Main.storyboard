@@ -11,7 +11,7 @@
         <!--Сartoons-->
         <scene sceneID="FFh-rf-aYU">
             <objects>
-                <tabBarController id="Vnr-sx-XDO" sceneMemberID="viewController">
+                <tabBarController id="Vnr-sx-XDO" customClass="TabBarViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Сartoons" id="HtW-Kq-1cg"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OY-gL-CXF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1449" y="90"/>
         </scene>
-        <!--Table View Controller-->
+        <!--List Table View Controller-->
         <scene sceneID="FMa-SO-Uum">
             <objects>
-                <tableViewController id="Bqy-NT-27U" sceneMemberID="viewController">
+                <tableViewController id="Bqy-NT-27U" customClass="ListTableViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tsE-Hy-q5i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="3443" y="-527"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="7n6-gU-To4">
             <objects>
-                <viewController id="Q4T-Xg-tU6" sceneMemberID="viewController">
+                <viewController id="Q4T-Xg-tU6" customClass="ListViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7T-P3-HB5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
