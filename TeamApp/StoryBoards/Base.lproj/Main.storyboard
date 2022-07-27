@@ -3,6 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="mLU-Gw-PBf" kind="relationship" relationship="viewControllers" id="Vox-EQ-i3h"/>
@@ -37,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="sectionIndexBackgroundColor" red="0.94901961089999998" green="0.75003082909959329" blue="0.25167367980924815" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94117647410000005" green="0.87692277220000003" blue="0.52092730769999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellCartoon" textLabel="39X-GA-eEE" detailTextLabel="ASc-vE-8ix" style="IBUITableViewCellStyleSubtitle" id="Vz8-WJ-Cjq">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
@@ -62,6 +64,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="Q4T-Xg-tU6" kind="show" id="UUm-sI-3OL"/>
                                 </connections>
@@ -289,7 +292,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="sectionIndexBackgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94117647410000005" green="0.87692277220000003" blue="0.52092730769999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTeam" textLabel="1gX-h6-QOO" detailTextLabel="WEZ-rT-5cV" style="IBUITableViewCellStyleSubtitle" id="awt-CJ-Pax">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
@@ -314,6 +318,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="cio-9W-hgg" kind="show" id="ZR5-eX-EL7"/>
                                 </connections>
@@ -387,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фраза из мультка рандом Антон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-VC-dal">
-                                <rect key="frame" x="16" y="273.5" width="288" height="21"/>
+                                <rect key="frame" x="30.5" y="273.5" width="259.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -406,10 +411,9 @@
                         <viewLayoutGuide key="safeArea" id="zed-JS-oOh"/>
                         <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="IHu-VC-dal" firstAttribute="centerX" secondItem="tLm-WJ-fza" secondAttribute="centerX" id="37y-aM-zsR"/>
                             <constraint firstItem="ikP-dc-efM" firstAttribute="centerX" secondItem="tLm-WJ-fza" secondAttribute="centerX" id="Bqx-2W-HMm"/>
                             <constraint firstItem="IHu-VC-dal" firstAttribute="centerY" secondItem="tLm-WJ-fza" secondAttribute="centerY" id="DKm-rh-Cej"/>
-                            <constraint firstAttribute="trailing" secondItem="IHu-VC-dal" secondAttribute="trailing" constant="16" id="Nje-jn-2jo"/>
-                            <constraint firstItem="IHu-VC-dal" firstAttribute="leading" secondItem="zed-JS-oOh" secondAttribute="leading" constant="16" id="Oa2-Vj-u9B"/>
                             <constraint firstItem="zed-JS-oOh" firstAttribute="bottom" secondItem="ikP-dc-efM" secondAttribute="bottom" constant="50" id="bGi-fG-wLh"/>
                         </constraints>
                     </view>
@@ -485,6 +489,9 @@
         <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
