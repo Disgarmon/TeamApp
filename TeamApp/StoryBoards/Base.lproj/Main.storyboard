@@ -337,7 +337,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <segue destination="cio-9W-hgg" kind="show" id="ZR5-eX-EL7"/>
+                                    <segue destination="cio-9W-hgg" kind="presentation" id="ZR5-eX-EL7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -360,23 +360,23 @@
             <objects>
                 <viewController id="cio-9W-hgg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhi-h5-APd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-TE-IqQ">
-                                <rect key="frame" x="16" y="88" width="288" height="135"/>
+                                <rect key="frame" x="16" y="44" width="288" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="6cP-XN-LUG"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-7H-tsB">
-                                <rect key="frame" x="16" y="253" width="288" height="21"/>
+                                <rect key="frame" x="16" y="209" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnw-c9-jwD">
-                                <rect key="frame" x="16" y="304" width="288" height="21"/>
+                                <rect key="frame" x="16" y="260" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
