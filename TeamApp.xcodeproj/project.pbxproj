@@ -14,7 +14,6 @@
 		992F32DE289059B90094667C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992F32DC289059B90094667C /* Main.storyboard */; };
 		992F32E0289059BA0094667C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992F32DF289059BA0094667C /* Assets.xcassets */; };
 		992F32E3289059BA0094667C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992F32E1289059BA0094667C /* LaunchScreen.storyboard */; };
-		992F32EB28905C490094667C /* DataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F32EA28905C490094667C /* DataSourse.swift */; };
 		99DE920328916BF6007B13CC /* Cartoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920228916BF6007B13CC /* Cartoon.swift */; };
 		99DE920828917281007B13CC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920728917281007B13CC /* ListTableViewController.swift */; };
 		99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920928917367007B13CC /* TabBarViewController.swift */; };
@@ -31,7 +30,6 @@
 		992F32DF289059BA0094667C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992F32E2289059BA0094667C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		992F32E4289059BA0094667C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		992F32EA28905C490094667C /* DataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourse.swift; sourceTree = "<group>"; };
 		99DE920228916BF6007B13CC /* Cartoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoon.swift; sourceTree = "<group>"; };
 		99DE920728917281007B13CC /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		99DE920928917367007B13CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +69,7 @@
 				99DE920428916BFB007B13CC /* Models */,
 				99DE91FF28916BB7007B13CC /* App */,
 				99DE920028916BD4007B13CC /* ViewControllers */,
-				99DE920128916BE0007B13CC /* Data */,
+				99DE920128916BE0007B13CC /* Services */,
 				99DE920528916C2E007B13CC /* StoryBoards */,
 				99DE920628916C39007B13CC /* Resourses */,
 			);
@@ -97,13 +95,12 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		99DE920128916BE0007B13CC /* Data */ = {
+		99DE920128916BE0007B13CC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				992F32EA28905C490094667C /* DataSourse.swift */,
 				42949258289193AB0084DE66 /* DataStore.swift */,
 			);
-			path = Data;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		99DE920428916BFB007B13CC /* Models */ = {
@@ -218,7 +215,6 @@
 				99DE920328916BF6007B13CC /* Cartoon.swift in Sources */,
 				99DE920828917281007B13CC /* ListTableViewController.swift in Sources */,
 				99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */,
-				992F32EB28905C490094667C /* DataSourse.swift in Sources */,
 				99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */,
 				42949259289193AB0084DE66 /* DataStore.swift in Sources */,
 				992F32D9289059B90094667C /* SceneDelegate.swift in Sources */,

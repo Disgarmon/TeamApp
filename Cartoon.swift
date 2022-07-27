@@ -2,14 +2,14 @@
 //  Model.swift
 //  TeamApp
 //
-//  Created by Daniil Lebedev on 27.07.2022.
+//  Created by Elenka Lebedev on 27.07.2022.
 //
 
 struct Cartoon {
     let title: String
     let description: String
     let cover: String
-    let imgs: [String]
+    let images: [String]
     let phrases: [String]
     let quiz: Quiz
 }
@@ -23,8 +23,32 @@ extension Cartoon {
     static func getCartoonList() -> [Cartoon] {
         
         var cartoons: [Cartoon] = []
+        let dataStore = DataStore.shared
         
-        // дописать логику формирования массива в соответствии с dataSours
+        let iterationCount = min(
+            dataStore.titles.count,
+            dataStore.descriptions.count,
+            dataStore.covers.count,
+            dataStore.images.count,
+            dataStore.phrases.count,
+            dataStore.questions.count,
+            dataStore.answers.count
+        )
+        
+        for index in 0..<iterationCount {
+            let cartoon = Cartoon(
+                title: dataStore.titles[index],
+                description: dataStore.descriptions[index],
+                cover: dataStore.covers[index],
+                images: dataStore.images[index],
+                phrases: dataStore.phrases[index],
+                quiz: Quiz(
+                    question: dataStore.questions[index],
+                    answers: dataStore.answers[index]
+                )
+            )
+            cartoons.append(cartoon)
+        }
         return cartoons
     }
 }
