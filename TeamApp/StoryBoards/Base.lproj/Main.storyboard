@@ -176,13 +176,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-XI-3iF">
-                                <rect key="frame" x="16" y="135" width="288" height="20.5"/>
+                                <rect key="frame" x="16" y="121" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-AB-Ci2">
-                                <rect key="frame" x="126.5" y="185.5" width="67" height="315"/>
+                                <rect key="frame" x="126.5" y="171.5" width="67" height="315"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-G9-vxA">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
@@ -211,14 +211,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-KQ-i9Q">
+                                <rect key="frame" x="0.0" y="91" width="320" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1uE-XW-9bG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bcR-XI-3iF" firstAttribute="top" secondItem="1uE-XW-9bG" secondAttribute="top" constant="44" id="2Wz-W0-eMk"/>
+                            <constraint firstItem="hcN-KQ-i9Q" firstAttribute="leading" secondItem="1uE-XW-9bG" secondAttribute="leading" id="10I-kg-LfR"/>
+                            <constraint firstItem="bcR-XI-3iF" firstAttribute="top" secondItem="1uE-XW-9bG" secondAttribute="top" constant="30" id="2Wz-W0-eMk"/>
+                            <constraint firstItem="1uE-XW-9bG" firstAttribute="trailing" secondItem="hcN-KQ-i9Q" secondAttribute="trailing" id="B99-Ng-3Z8"/>
                             <constraint firstItem="bcR-XI-3iF" firstAttribute="leading" secondItem="1uE-XW-9bG" secondAttribute="leading" constant="16" id="Ix3-8e-HWJ"/>
                             <constraint firstItem="1uE-XW-9bG" firstAttribute="trailing" secondItem="bcR-XI-3iF" secondAttribute="trailing" constant="16" id="UwJ-AA-p0m"/>
                             <constraint firstItem="1EP-AB-Ci2" firstAttribute="top" secondItem="bcR-XI-3iF" secondAttribute="bottom" constant="30" id="hMU-te-NX0"/>
+                            <constraint firstItem="hcN-KQ-i9Q" firstAttribute="top" secondItem="1uE-XW-9bG" secondAttribute="top" id="iNv-hz-VUH"/>
                             <constraint firstItem="1EP-AB-Ci2" firstAttribute="centerX" secondItem="8RU-7H-UDP" secondAttribute="centerX" id="ya2-Oy-dGK"/>
                         </constraints>
                     </view>
