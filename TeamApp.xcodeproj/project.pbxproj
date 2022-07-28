@@ -19,6 +19,7 @@
 		99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920928917367007B13CC /* TabBarViewController.swift */; };
 		99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920B289173F8007B13CC /* ListTableViewCell.swift */; };
 		F49AFBAC2892E3E2007C11D6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AFBAB2892E3E2007C11D6 /* Person.swift */; };
+		F49AFBAE2892E44F007C11D6 /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AFBAD2892E44F007C11D6 /* AboutUsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		99DE920928917367007B13CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		99DE920B289173F8007B13CC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		F49AFBAB2892E3E2007C11D6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F49AFBAD2892E44F007C11D6 /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				99DE920928917367007B13CC /* TabBarViewController.swift */,
 				99DE920D2891745F007B13CC /* List */,
+				F49AFBAD2892E44F007C11D6 /* AboutUsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */,
 				F49AFBAC2892E3E2007C11D6 /* Person.swift in Sources */,
 				42949259289193AB0084DE66 /* DataStore.swift in Sources */,
+				F49AFBAE2892E44F007C11D6 /* AboutUsTableViewController.swift in Sources */,
 				992F32D9289059B90094667C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
