@@ -9,7 +9,7 @@ class DataStore {
     static let shared = DataStore()
     
     let titles = [
-        "title1", "title2", "title3",
+        "Аладдин", "title2", "title3",
         "title4", "title5"
     ]
     
