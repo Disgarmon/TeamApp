@@ -2,7 +2,7 @@
 //  Model.swift
 //  TeamApp
 //
-//  Created by Elenka Lebedev on 27.07.2022.
+//  Created by Elenka on 27.07.2022.
 //
 
 struct Cartoon {

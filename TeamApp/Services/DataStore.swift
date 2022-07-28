@@ -18,7 +18,7 @@ class DataStore {
         "description4", "description5"
     ]
     let covers = [
-        "cover1", "cover2", "cover3",
+        "aladdin", "cover2", "cover3",
         "cover4", "cover5"
     ]
     let images = [
