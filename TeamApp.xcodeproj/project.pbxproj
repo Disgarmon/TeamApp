@@ -18,6 +18,7 @@
 		99DE920828917281007B13CC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920728917281007B13CC /* ListTableViewController.swift */; };
 		99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920928917367007B13CC /* TabBarViewController.swift */; };
 		99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE920B289173F8007B13CC /* ListTableViewCell.swift */; };
+		F49AFBAC2892E3E2007C11D6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AFBAB2892E3E2007C11D6 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		99DE920728917281007B13CC /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		99DE920928917367007B13CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		99DE920B289173F8007B13CC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		F49AFBAB2892E3E2007C11D6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				99DE920228916BF6007B13CC /* Cartoon.swift */,
+				F49AFBAB2892E3E2007C11D6 /* Person.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -216,6 +219,7 @@
 				99DE920828917281007B13CC /* ListTableViewController.swift in Sources */,
 				99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */,
 				99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */,
+				F49AFBAC2892E3E2007C11D6 /* Person.swift in Sources */,
 				42949259289193AB0084DE66 /* DataStore.swift in Sources */,
 				992F32D9289059B90094667C /* SceneDelegate.swift in Sources */,
 			);
