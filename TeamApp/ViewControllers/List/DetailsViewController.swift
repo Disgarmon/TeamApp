@@ -9,11 +9,20 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
+    @IBOutlet var imagesStackView: [UIImageView]!
+    @IBOutlet var cartoonDetails: UILabel!
+    
     var cartoon: Cartoon!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getImages()
+        cartoonDetails.text = cartoon.description
+    }
+    
+    func getImages() {
+        for (item, imageView) in zip(cartoon.images, imagesStackView) {
+            imageView.image = UIImage(named: item)
+        }
     }
 }
-
