@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		42949259289193AB0084DE66 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42949258289193AB0084DE66 /* DataStore.swift */; };
+		7D825E4F2892FA2E00C103F3 /* Quizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E4E2892FA2E00C103F3 /* Quizz.swift */; };
+		7D825E522892FB7600C103F3 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E512892FB7600C103F3 /* QuestionsViewController.swift */; };
+		7D825E542892FB8E00C103F3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E532892FB8E00C103F3 /* ResultViewController.swift */; };
 		992F32D7289059B90094667C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F32D6289059B90094667C /* AppDelegate.swift */; };
 		992F32D9289059B90094667C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F32D8289059B90094667C /* SceneDelegate.swift */; };
 		992F32DB289059B90094667C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F32DA289059B90094667C /* ListViewController.swift */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		42949258289193AB0084DE66 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		7D825E4E2892FA2E00C103F3 /* Quizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizz.swift; sourceTree = "<group>"; };
+		7D825E512892FB7600C103F3 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		7D825E532892FB8E00C103F3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		992F32D3289059B90094667C /* TeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992F32D6289059B90094667C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		992F32D8289059B90094667C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D825E502892FB3100C103F3 /* Quizz */ = {
+			isa = PBXGroup;
+			children = (
+				7D825E512892FB7600C103F3 /* QuestionsViewController.swift */,
+				7D825E532892FB8E00C103F3 /* ResultViewController.swift */,
+			);
+			path = Quizz;
+			sourceTree = "<group>";
+		};
 		992F32CA289059B90094667C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				99DE920928917367007B13CC /* TabBarViewController.swift */,
+				7D825E502892FB3100C103F3 /* Quizz */,
 				99DE920D2891745F007B13CC /* List */,
 			);
 			path = ViewControllers;
@@ -107,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				99DE920228916BF6007B13CC /* Cartoon.swift */,
+				7D825E4E2892FA2E00C103F3 /* Quizz.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -211,13 +228,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				992F32DB289059B90094667C /* ListViewController.swift in Sources */,
+				7D825E4F2892FA2E00C103F3 /* Quizz.swift in Sources */,
 				992F32D7289059B90094667C /* AppDelegate.swift in Sources */,
 				99DE920328916BF6007B13CC /* Cartoon.swift in Sources */,
 				99DE920828917281007B13CC /* ListTableViewController.swift in Sources */,
 				99DE920A28917367007B13CC /* TabBarViewController.swift in Sources */,
+				7D825E522892FB7600C103F3 /* QuestionsViewController.swift in Sources */,
 				99DE920C289173F8007B13CC /* ListTableViewCell.swift in Sources */,
 				42949259289193AB0084DE66 /* DataStore.swift in Sources */,
 				992F32D9289059B90094667C /* SceneDelegate.swift in Sources */,
+				7D825E542892FB8E00C103F3 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

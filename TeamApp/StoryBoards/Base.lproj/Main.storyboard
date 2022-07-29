@@ -191,7 +191,7 @@
         <!--Question №-->
         <scene sceneID="ohU-gZ-zdU">
             <objects>
-                <viewController id="oaJ-ZD-eFy" sceneMemberID="viewController">
+                <viewController id="oaJ-ZD-eFy" customClass="QuestionsViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8RU-7H-UDP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,26 +209,41 @@
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="jJj-6h-NsW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-nj-3W9">
                                         <rect key="frame" x="0.0" y="71" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="f5s-pw-WaY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-n1-9cb">
                                         <rect key="frame" x="0.0" y="142" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="dU0-XH-PuD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-ks-l3O">
                                         <rect key="frame" x="0.0" y="213" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="N7N-Av-Zp6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-bI-5AX">
                                         <rect key="frame" x="0.0" y="284" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="0gf-UB-fRS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -253,6 +268,14 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="TWx-TA-VLb"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonsStackView" destination="1EP-AB-Ci2" id="bMK-sR-8Q8"/>
+                        <outlet property="questionLabel" destination="bcR-XI-3iF" id="ova-of-dWG"/>
+                        <outlet property="questionProgressView" destination="hcN-KQ-i9Q" id="sgV-vz-dXi"/>
+                        <outletCollection property="answearButtons" destination="a85-G9-vxA" collectionClass="NSMutableArray" id="y4g-5R-MQU"/>
+                        <outletCollection property="answearButtons" destination="2D9-nj-3W9" collectionClass="NSMutableArray" id="hNd-cF-Vf4"/>
+                        <outletCollection property="answearButtons" destination="hY1-n1-9cb" collectionClass="NSMutableArray" id="czm-mf-WDa"/>
+                        <outletCollection property="answearButtons" destination="UMJ-ks-l3O" collectionClass="NSMutableArray" id="vQD-Lc-ek7"/>
+                        <outletCollection property="answearButtons" destination="Wy5-bI-5AX" collectionClass="NSMutableArray" id="bDD-2R-05E"/>
                         <segue destination="ISq-eh-reO" kind="show" identifier="showResult" id="6xp-1S-n58"/>
                     </connections>
                 </viewController>
@@ -260,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="5393" y="151"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="JO4-03-BVe">
             <objects>
-                <viewController id="ISq-eh-reO" sceneMemberID="viewController">
+                <viewController id="ISq-eh-reO" customClass="ResultViewController" customModule="TeamApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dun-4p-iGj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,8 +317,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Mt-JD-3df">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="GLL-iV-sLS"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="GLL-iV-sLS">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="ISq-eh-reO" id="DY6-8d-QQu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Clg-Ll-SYw" id="ejm-66-apU"/>
+                        <outlet property="resultLabel" destination="BNW-zO-3BU" id="xEE-04-nK0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBs-zD-UrS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
