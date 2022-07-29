@@ -56,6 +56,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="centerY" secondItem="52E-94-ym5" secondAttribute="centerY" id="1YY-tW-GoB"/>
+                                        <constraint firstAttribute="bottom" secondItem="52E-94-ym5" secondAttribute="bottom" id="EwB-e3-tcd"/>
+                                        <constraint firstAttribute="trailing" secondItem="52E-94-ym5" secondAttribute="trailing" id="I51-ta-P73"/>
+                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="topMargin" id="RhG-iK-S5F"/>
+                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aeD-Do-D9h" secondAttribute="leadingMargin" id="YNg-Yx-6yW"/>
+                                        <constraint firstItem="52E-94-ym5" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
+                                        <constraint firstAttribute="trailing" secondItem="iTl-2a-Spb" secondAttribute="trailing" constant="270" id="h5b-AP-Glv"/>
+                                        <constraint firstItem="52E-94-ym5" firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -74,7 +84,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oa-te-XIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3443" y="-558"/>
+            <point key="canvasLocation" x="3442.5" y="-558.80281690140851"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="7n6-gU-To4">
