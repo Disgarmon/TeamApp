@@ -134,8 +134,10 @@
                     <navigationItem key="navigationItem" id="hli-kl-sBv"/>
                     <connections>
                         <outlet property="cartoonDetails" destination="z4q-lG-SUr" id="sIz-Kf-N8a"/>
-                        <outlet property="firstImage" destination="xXX-yP-35T" id="65B-W3-fmq"/>
-                        <outlet property="imagesStackView" destination="sRa-h9-R3J" id="Vlc-9w-uCG"/>
+                        <outletCollection property="imagesStackView" destination="xXX-yP-35T" collectionClass="NSMutableArray" id="L6Q-aG-UUr"/>
+                        <outletCollection property="imagesStackView" destination="lfi-Cr-t67" collectionClass="NSMutableArray" id="4iD-wQ-oMl"/>
+                        <outletCollection property="imagesStackView" destination="XDn-bg-FKK" collectionClass="NSMutableArray" id="uc8-qK-GVb"/>
+                        <outletCollection property="imagesStackView" destination="jnY-wX-rkY" collectionClass="NSMutableArray" id="Yco-Ms-6ao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aw3-fz-JbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
