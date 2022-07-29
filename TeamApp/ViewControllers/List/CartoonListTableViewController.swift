@@ -26,13 +26,19 @@ class CartoonListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellCartoon", for: indexPath)
         let cartoon = cartoonList[indexPath.row]
-        
+    
         var content = cell.defaultContentConfiguration()
-        
-        content.text = cartoon.title
-        content.image = UIImage(named: cartoon.cover)
-        cell.contentConfiguration = content
+        var backgroundConfig = UIBackgroundConfiguration.listPlainCell()
 
+        content.text = cartoon.title
+        content.textProperties.color = .white
+        content.textProperties.font = UIFont.boldSystemFont(ofSize: 17)
+        
+        backgroundConfig.image = UIImage(named: cartoon.cover)
+    
+        
+        cell.contentConfiguration = content
+        cell.backgroundConfiguration = backgroundConfig
         return cell
     }
  
