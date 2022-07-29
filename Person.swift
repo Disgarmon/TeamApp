@@ -18,7 +18,7 @@ struct Person {
     static func getPerson() -> [Person]{
         [
             Person(name: "Daniil", surname: "Lebedev", position: "Team lead", photo: "daniil"),
-            Person(name: "Anton", surname: "", position: "Developer", photo: "anton"),
+            Person(name: "Anton", surname: "Polin", position: "Developer", photo: "anton"),
             Person(name: "Denis", surname: "Kurlykov", position: "Developer", photo: "denis"),
             Person(name: "Lena", surname: "", position: "Developer", photo: "lena"),
             Person(name: "Arseniy", surname: "", position: "Developer", photo: "arseniy"),
