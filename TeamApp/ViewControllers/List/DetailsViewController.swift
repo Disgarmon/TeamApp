@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
-
+class DetailsViewController: UIViewController {
+    
+    var cartoon: Cartoon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-// Привет
 }
 
