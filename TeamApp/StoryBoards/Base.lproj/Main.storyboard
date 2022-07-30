@@ -429,6 +429,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v5M-HC-Uuo"/>
+                    <connections>
+                        <outlet property="fullNameLabel" destination="nyT-7H-tsB" id="mWT-26-atQ"/>
+                        <outlet property="photoEmployeeImage" destination="Oye-TE-IqQ" id="zNS-Wh-uL2"/>
+                        <outlet property="positionLabel" destination="Wnw-c9-jwD" id="OZG-Y2-75B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvY-h1-DYE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
