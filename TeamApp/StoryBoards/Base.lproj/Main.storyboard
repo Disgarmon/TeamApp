@@ -57,14 +57,8 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="centerY" secondItem="52E-94-ym5" secondAttribute="centerY" id="1YY-tW-GoB"/>
-                                        <constraint firstAttribute="bottom" secondItem="52E-94-ym5" secondAttribute="bottom" id="EwB-e3-tcd"/>
-                                        <constraint firstAttribute="trailing" secondItem="52E-94-ym5" secondAttribute="trailing" id="I51-ta-P73"/>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="topMargin" id="RhG-iK-S5F"/>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aeD-Do-D9h" secondAttribute="leadingMargin" id="YNg-Yx-6yW"/>
-                                        <constraint firstItem="52E-94-ym5" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
-                                        <constraint firstAttribute="trailing" secondItem="iTl-2a-Spb" secondAttribute="trailing" constant="270" id="h5b-AP-Glv"/>
-                                        <constraint firstItem="52E-94-ym5" firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
+                                        <constraint firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
+                                        <constraint firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -176,7 +170,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                         <connections>
-                                            <segue destination="ib3-YT-9gC" kind="presentation" modalPresentationStyle="automatic" id="Onp-Rp-5Jb"/>
+                                            <segue destination="ib3-YT-9gC" kind="presentation" modalPresentationStyle="fullScreen" id="Onp-Rp-5Jb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -200,17 +194,17 @@
             <objects>
                 <viewController id="oaJ-ZD-eFy" customClass="QuestionsViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8RU-7H-UDP">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-XI-3iF">
-                                <rect key="frame" x="16" y="138" width="396" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="170" width="396" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-AB-Ci2">
-                                <rect key="frame" x="180.66666666666666" y="188.33333333333337" width="67" height="315"/>
+                                <rect key="frame" x="180.66666666666666" y="220.33333333333337" width="67" height="315"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-G9-vxA">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
@@ -255,7 +249,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-KQ-i9Q">
-                                <rect key="frame" x="0.0" y="108" width="428" height="4"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="4"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1uE-XW-9bG"/>
@@ -295,20 +289,14 @@
             <objects>
                 <viewController id="ISq-eh-reO" customClass="ResultViewController" customModule="TeamApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dun-4p-iGj">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ajk-qA-eWY">
-                                <rect key="frame" x="193.33333333333334" y="395.66666666666669" width="41.333333333333343" height="80.666666666666686"/>
+                                <rect key="frame" x="193.33333333333334" y="453" width="41.333333333333343" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNW-zO-3BU">
                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clg-Ll-SYw">
-                                        <rect key="frame" x="0.0" y="60.333333333333321" width="41.333333333333336" height="20.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -331,7 +319,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionLabel" destination="Clg-Ll-SYw" id="ejm-66-apU"/>
                         <outlet property="resultLabel" destination="BNW-zO-3BU" id="xEE-04-nK0"/>
                     </connections>
                 </viewController>
@@ -342,7 +329,7 @@
         <!--Тест. Работает ли-->
         <scene sceneID="lPT-45-Y1O">
             <objects>
-                <tableViewController id="l9f-3J-XFN" sceneMemberID="viewController">
+                <tableViewController id="l9f-3J-XFN" customClass="AboutUsTableViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JCa-W8-Keh">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,7 +362,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <segue destination="cio-9W-hgg" kind="presentation" id="ZR5-eX-EL7"/>
+                                    <segue destination="cio-9W-hgg" kind="presentation" modalPresentationStyle="fullScreen" id="ZR5-eX-EL7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -393,12 +380,12 @@
             </objects>
             <point key="canvasLocation" x="3443" y="1465"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Info View Controller-->
         <scene sceneID="aVc-mC-6cA">
             <objects>
-                <viewController id="cio-9W-hgg" sceneMemberID="viewController">
+                <viewController id="cio-9W-hgg" customClass="PersonInfoViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhi-h5-APd">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-TE-IqQ">
@@ -508,7 +495,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ib3-YT-9gC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dPd-Bn-am2">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
