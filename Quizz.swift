@@ -9,70 +9,69 @@ import Foundation
 
 struct Question {
     let title: String
-    //let image: UIImage?
+    let image: String
     let answers: [Answer]
     
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "2 + 2 ?",
-                //image: nil,
+                title: "В каком городе проходит основной сюжет ?",
+                image: "AladinQuizz",
                 answers: [
-                    Answer(title: "4", correct: true),
-                    Answer(title: "1"),
-                    Answer(title: "5"),
-                    Answer(title: "10"),
-                    Answer(title: "20")
+                    Answer(title: "Аграба", correct: true),
+                    Answer(title: "Загреб"),
+                    Answer(title: "Москва"),
+                    Answer(title: "Кабул"),
+                    Answer(title: "Бишкек")
                 ]
             ),
             Question(
-                title: "1 + 1 ?",
-                //image: nil,
+                title: "Как зовут лучшего друга Ариэль ?",
+                image: "ArielQuizz",
                 answers: [
-                    Answer(title: "2", correct: true),
-                    Answer(title: "1"),
-                    Answer(title: "7"),
-                    Answer(title: "6"),
-                    Answer(title: "30")
+                    Answer(title: "Флаундер", correct: true),
+                    Answer(title: "Урсула"),
+                    Answer(title: "Тритон"),
+                    Answer(title: "Себастьян"),
+                    Answer(title: "Эрик")
                 ]
             ),
             Question(
-                title: "10 + 2 ?",
-                //image: nil,
+                title: "Как зовут мышь в мультфильме Чип и Дайл ?",
+                image: "ChipDaleQuizz",
                 answers: [
-                    Answer(title: "12", correct: true),
-                    Answer(title: "1"),
-                    Answer(title: "5"),
-                    Answer(title: "8"),
-                    Answer(title: "15")
+                    Answer(title: "Рокки", correct: true),
+                    Answer(title: "Толстопуз"),
+                    Answer(title: "Рокки Бальбоа"),
+                    Answer(title: "Вжик"),
+                    Answer(title: "Толстосум")
                 ]
             ),
             Question(
-                title: "15 + 15 ?",
-                //image: nil,
+                title: "Как зовут приемную дочь Черного плаща ?",
+                image: "DarkwingDuckQuizz",
                 answers: [
-                    Answer(title: "30", correct: true),
-                    Answer(title: "46"),
-                    Answer(title: "100"),
-                    Answer(title: "16"),
-                    Answer(title: "18")
+                    Answer(title: "Гусена", correct: true),
+                    Answer(title: "Моргана"),
+                    Answer(title: "Зигзаг Маккряк"),
+                    Answer(title: "Громилас"),
+                    Answer(title: "Нептуния")
                 ]
             ),
             Question(
-                title: "20 + 20 ?",
-                //image: nil,
+                title: "Как зовут триллионера в утиных исторях ?",
+                image: "DuckTalesQuizz",
                 answers: [
-                    Answer(title: "40", correct: true),
-                    Answer(title: "46"),
-                    Answer(title: "100"),
-                    Answer(title: "16"),
-                    Answer(title: "18")
+                    Answer(title: "Скрудж Макдак", correct: true),
+                    Answer(title: "Дилл"),
+                    Answer(title: "Билли"),
+                    Answer(title: "Вилли"),
+                    Answer(title: "миссис Клювдия")
                 ]
             )
         ]
     }
 }
-
 
 struct Answer {
     let title: String
