@@ -57,14 +57,10 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="centerY" secondItem="52E-94-ym5" secondAttribute="centerY" id="1YY-tW-GoB"/>
-                                        <constraint firstAttribute="bottom" secondItem="52E-94-ym5" secondAttribute="bottom" id="EwB-e3-tcd"/>
-                                        <constraint firstAttribute="trailing" secondItem="52E-94-ym5" secondAttribute="trailing" id="I51-ta-P73"/>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="topMargin" id="RhG-iK-S5F"/>
-                                        <constraint firstItem="iTl-2a-Spb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aeD-Do-D9h" secondAttribute="leadingMargin" id="YNg-Yx-6yW"/>
-                                        <constraint firstItem="52E-94-ym5" firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
-                                        <constraint firstAttribute="trailing" secondItem="iTl-2a-Spb" secondAttribute="trailing" constant="270" id="h5b-AP-Glv"/>
-                                        <constraint firstItem="52E-94-ym5" firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
+                                        <constraint firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="topMargin" id="RhG-iK-S5F"/>
+                                        <constraint firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aeD-Do-D9h" secondAttribute="leadingMargin" id="YNg-Yx-6yW"/>
+                                        <constraint firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
+                                        <constraint firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -393,10 +389,10 @@
             </objects>
             <point key="canvasLocation" x="3443" y="1465"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Info View Controller-->
         <scene sceneID="aVc-mC-6cA">
             <objects>
-                <viewController id="cio-9W-hgg" sceneMemberID="viewController">
+                <viewController id="cio-9W-hgg" customClass="PersonInfoViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhi-h5-APd">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,6 +431,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v5M-HC-Uuo"/>
+                    <connections>
+                        <outlet property="fullNameLabel" destination="nyT-7H-tsB" id="Fz9-IR-1hS"/>
+                        <outlet property="photoEmployeeImage" destination="Oye-TE-IqQ" id="fPN-Ts-kAI"/>
+                        <outlet property="positionLabel" destination="Wnw-c9-jwD" id="KhK-ql-3SR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvY-h1-DYE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
