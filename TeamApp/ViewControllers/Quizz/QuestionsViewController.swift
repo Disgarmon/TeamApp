@@ -15,6 +15,8 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var buttonsStackView: UIStackView!
     @IBOutlet var answearButtons: [UIButton]!
     
+    @IBOutlet var imageView: UIImageView!
+    
     private let questions = Question.getQuestions()
     private var answersChosen: [Answer] = []
     private var questionIndex = 0
@@ -65,6 +67,8 @@ extension QuestionsViewController {
         title = "Вопрос № \(questionIndex) из \(questions.count)"
         
         showButtonsStackWiew(with: curentAnswers)
+        
+        imageView.image = UIImage(named: questions[questionIndex].image)
     }
     
     private func showButtonsStackWiew(with answers: [Answer]) {

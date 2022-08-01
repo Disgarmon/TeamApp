@@ -197,54 +197,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nbe-d9-1Ks">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nbe-d9-1Ks">
                                 <rect key="frame" x="0.0" y="140" width="428" height="752"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-XI-3iF">
-                                <rect key="frame" x="16" y="170" width="396" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-XI-3iF">
+                                <rect key="frame" x="16" y="170" width="396" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-AB-Ci2">
-                                <rect key="frame" x="180.66666666666666" y="220.33333333333337" width="67" height="315"/>
+                                <rect key="frame" x="167.66666666666666" y="230" width="92.999999999999972" height="350"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-G9-vxA">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-G9-vxA">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="jJj-6h-NsW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-nj-3W9">
-                                        <rect key="frame" x="0.0" y="70.999999999999972" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-nj-3W9">
+                                        <rect key="frame" x="0.0" y="78" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="f5s-pw-WaY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-n1-9cb">
-                                        <rect key="frame" x="0.0" y="141.99999999999997" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-n1-9cb">
+                                        <rect key="frame" x="0.0" y="156" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="dU0-XH-PuD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-ks-l3O">
-                                        <rect key="frame" x="0.0" y="212.99999999999997" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-ks-l3O">
+                                        <rect key="frame" x="0.0" y="234" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="N7N-Av-Zp6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-bI-5AX">
-                                        <rect key="frame" x="0.0" y="284" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-bI-5AX">
+                                        <rect key="frame" x="0.0" y="312" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonAswerPressed:" destination="oaJ-ZD-eFy" eventType="touchUpInside" id="0gf-UB-fRS"/>
                                         </connections>
@@ -277,6 +292,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="buttonsStackView" destination="1EP-AB-Ci2" id="bMK-sR-8Q8"/>
+                        <outlet property="imageView" destination="nbe-d9-1Ks" id="8qY-7o-4Xy"/>
                         <outlet property="questionLabel" destination="bcR-XI-3iF" id="ova-of-dWG"/>
                         <outlet property="questionProgressView" destination="hcN-KQ-i9Q" id="sgV-vz-dXi"/>
                         <outletCollection property="answearButtons" destination="a85-G9-vxA" collectionClass="NSMutableArray" id="y4g-5R-MQU"/>
