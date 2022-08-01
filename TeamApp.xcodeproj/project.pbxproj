@@ -61,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56659BA228982F5C007B6C2D /* Phrases */ = {
+			isa = PBXGroup;
+			children = (
+				56659BA028980304007B6C2D /* PhrasesViewController.swift */,
+			);
+			path = Phrases;
+			sourceTree = "<group>";
+		};
 		7D825E502892FB3100C103F3 /* Quizz */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +120,11 @@
 		99DE920028916BD4007B13CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				56659BA028980304007B6C2D /* PhrasesViewController.swift */,
 				99DE920928917367007B13CC /* TabBarViewController.swift */,
 				F49AFBAD2892E44F007C11D6 /* AboutUsTableViewController.swift */,
 				F49AFBAF2892E4B6007C11D6 /* PersonInfoViewController.swift */,
 				7D825E502892FB3100C103F3 /* Quizz */,
+				56659BA228982F5C007B6C2D /* Phrases */,
 				99DE920D2891745F007B13CC /* List */,
 			);
 			path = ViewControllers;
