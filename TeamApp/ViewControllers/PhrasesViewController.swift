@@ -10,22 +10,24 @@ import UIKit
 class PhrasesViewController: UIViewController {
 
     @IBOutlet var phraseLabel: UILabel!
-   
+    let cartoons = Cartoon.getCartoonList()
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         phraseLabel.text = ""
         
-       
-            
-        
+     
+    
         
     }
     
     @IBAction func startButtom() {
-       // phraseLabel.text = Cartoon.phrases.randomElement()
-    
+       
+        let indexOfCartoon = arc4random_uniform(UInt32(cartoons.count))
+        let phrases: [String] = cartoons[Int(indexOfCartoon)].phrases
+        let indexOfPhrase = arc4random_uniform(UInt32(phrases.count))
+        let phrase = phrases[Int(indexOfPhrase)]
+        phraseLabel.text = phrase
     }
     
     
