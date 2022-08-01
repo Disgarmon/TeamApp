@@ -19,7 +19,7 @@ class PersonInfoViewController: UIViewController {
         super.viewDidLoad()
         
         photoEmployeeImage.image = UIImage(named: person.photo)
-        photoEmployeeImage.layer.cornerRadius = 10
+        photoEmployeeImage.layer.cornerRadius = photoEmployeeImage.frame.height / 10
         
         fullNameLabel.text = person.fullName
         fullNameLabel.font = UIFont.systemFont(ofSize: 40)
