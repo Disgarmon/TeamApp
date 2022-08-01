@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42949259289193AB0084DE66 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42949258289193AB0084DE66 /* DataStore.swift */; };
+		56659BA128980304007B6C2D /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56659BA028980304007B6C2D /* PhrasesViewController.swift */; };
 		7D825E4F2892FA2E00C103F3 /* Quizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E4E2892FA2E00C103F3 /* Quizz.swift */; };
 		7D825E522892FB7600C103F3 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E512892FB7600C103F3 /* QuestionsViewController.swift */; };
 		7D825E542892FB8E00C103F3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D825E532892FB8E00C103F3 /* ResultViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		42949258289193AB0084DE66 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		56659BA028980304007B6C2D /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
 		7D825E4E2892FA2E00C103F3 /* Quizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizz.swift; sourceTree = "<group>"; };
 		7D825E512892FB7600C103F3 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		7D825E532892FB8E00C103F3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		99DE920028916BD4007B13CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				56659BA028980304007B6C2D /* PhrasesViewController.swift */,
 				99DE920928917367007B13CC /* TabBarViewController.swift */,
 				F49AFBAD2892E44F007C11D6 /* AboutUsTableViewController.swift */,
 				F49AFBAF2892E4B6007C11D6 /* PersonInfoViewController.swift */,
@@ -236,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992F32DB289059B90094667C /* ListViewController.swift in Sources */,
+				992F32DB289059B90094667C /* DetailsViewController.swift in Sources */,
 				7D825E4F2892FA2E00C103F3 /* Quizz.swift in Sources */,
 				992F32D7289059B90094667C /* AppDelegate.swift in Sources */,
 				99DE920328916BF6007B13CC /* Cartoon.swift in Sources */,
@@ -248,6 +251,7 @@
 				F49AFBAC2892E3E2007C11D6 /* Person.swift in Sources */,
 				42949259289193AB0084DE66 /* DataStore.swift in Sources */,
 				F49AFBAE2892E44F007C11D6 /* AboutUsTableViewController.swift in Sources */,
+				56659BA128980304007B6C2D /* PhrasesViewController.swift in Sources */,
 				992F32D9289059B90094667C /* SceneDelegate.swift in Sources */,
 				7D825E542892FB8E00C103F3 /* ResultViewController.swift in Sources */,
 			);
