@@ -3,7 +3,6 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,8 +16,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OY-gL-CXF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Bqy-NT-27U" kind="relationship" relationship="viewControllers" id="p27-s1-8ZS"/>
@@ -57,14 +55,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="top" secondItem="aeD-Do-D9h" secondAttribute="top" id="Z9N-rW-Rci"/>
-                                        <constraint firstAttribute="leading" secondItem="aeD-Do-D9h" secondAttribute="leading" id="w9z-kR-09d"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901961089999998" green="0.75003082909999996" blue="0.25167367979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <segue destination="Q4T-Xg-tU6" kind="show" id="Sm8-wq-v4V"/>
+                                    <segue destination="Q4T-Xg-tU6" kind="presentation" id="Hnt-zH-VL5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -86,40 +80,27 @@
             <objects>
                 <viewController id="Q4T-Xg-tU6" customClass="DetailsViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7T-P3-HB5">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sRa-h9-R3J">
-                                <rect key="frame" x="16" y="88" width="396" height="424"/>
+                                <rect key="frame" x="16" y="59.999999999999986" width="396" height="222.66666666666663"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xXX-yP-35T">
-                                        <rect key="frame" x="0.0" y="0.0" width="396" height="100"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xXX-yP-35T">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="222.66666666666666"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="9N0-zh-BKh"/>
+                                            <constraint firstAttribute="width" secondItem="xXX-yP-35T" secondAttribute="height" multiplier="16:9" id="fRv-CZ-yAo"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-Cr-t67">
-                                        <rect key="frame" x="0.0" y="108" width="396" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="VOv-S7-uyF"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDn-bg-FKK">
-                                        <rect key="frame" x="0.0" y="216" width="396" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="huG-n5-NM4"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-wX-rkY">
-                                        <rect key="frame" x="0.0" y="324" width="396" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="quu-gK-m7Q"/>
-                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название мультика Арсений" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4q-lG-SUr">
-                                <rect key="frame" x="16" y="522" width="396" height="20.333333333333371"/>
+                                <rect key="frame" x="16" y="292.66666666666669" width="396" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,7 +111,7 @@
                         <constraints>
                             <constraint firstItem="z4q-lG-SUr" firstAttribute="leading" secondItem="dsz-GF-1Ur" secondAttribute="leading" constant="16" id="1bH-gp-d5Z"/>
                             <constraint firstItem="z4q-lG-SUr" firstAttribute="top" secondItem="sRa-h9-R3J" secondAttribute="bottom" constant="10" id="Iz6-nF-3BD"/>
-                            <constraint firstItem="sRa-h9-R3J" firstAttribute="top" secondItem="dsz-GF-1Ur" secondAttribute="top" id="Uga-Qg-2dL"/>
+                            <constraint firstItem="sRa-h9-R3J" firstAttribute="top" secondItem="dsz-GF-1Ur" secondAttribute="top" constant="16" id="Uga-Qg-2dL"/>
                             <constraint firstItem="sRa-h9-R3J" firstAttribute="leading" secondItem="dsz-GF-1Ur" secondAttribute="leading" constant="16" id="YAS-zp-eW0"/>
                             <constraint firstAttribute="trailing" secondItem="z4q-lG-SUr" secondAttribute="trailing" constant="16" id="ZMD-kV-jPf"/>
                             <constraint firstItem="dsz-GF-1Ur" firstAttribute="trailing" secondItem="sRa-h9-R3J" secondAttribute="trailing" constant="16" id="u4m-F3-rWP"/>
@@ -140,9 +121,6 @@
                     <connections>
                         <outlet property="cartoonDetails" destination="z4q-lG-SUr" id="sIz-Kf-N8a"/>
                         <outletCollection property="imagesStackView" destination="xXX-yP-35T" collectionClass="NSMutableArray" id="L6Q-aG-UUr"/>
-                        <outletCollection property="imagesStackView" destination="lfi-Cr-t67" collectionClass="NSMutableArray" id="4iD-wQ-oMl"/>
-                        <outletCollection property="imagesStackView" destination="XDn-bg-FKK" collectionClass="NSMutableArray" id="uc8-qK-GVb"/>
-                        <outletCollection property="imagesStackView" destination="jnY-wX-rkY" collectionClass="NSMutableArray" id="Yco-Ms-6ao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aw3-fz-JbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -574,9 +552,6 @@
         <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

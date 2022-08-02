@@ -17,12 +17,21 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getImages()
+        getRadius()
         cartoonDetails.text = cartoon.description
     }
     
-    func getImages() {
+    private func getImages() {
         for (item, imageView) in zip(cartoon.images, imagesStackView) {
             imageView.image = UIImage(named: item)
         }
     }
+    private func getRadius() {
+        for imageView in imagesStackView{
+            imageView.layer.cornerRadius = imageView.frame.height / 10
+        }
+    }
 }
+
+
+
