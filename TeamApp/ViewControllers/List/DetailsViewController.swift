@@ -16,11 +16,12 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getImages()
         cartoonDetails.text = cartoon.description
     }
     
-    func getImages() {
+  private func getImages() {
         for (item, imageView) in zip(cartoon.images, imagesStackView) {
             imageView.image = UIImage(named: item)
         }

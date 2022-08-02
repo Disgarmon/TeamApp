@@ -11,12 +11,6 @@ struct Cartoon {
     let cover: String
     let images: [String]
     let phrases: [String]
-    let quiz: Quiz
-}
-
-struct Quiz {
-    let question: String
-    let answers: [String]
 }
 
 extension Cartoon {
@@ -41,11 +35,7 @@ extension Cartoon {
                 description: dataStore.descriptions[index],
                 cover: dataStore.covers[index],
                 images: dataStore.images[index],
-                phrases: dataStore.phrases[index],
-                quiz: Quiz(
-                    question: dataStore.questions[index],
-                    answers: dataStore.answers[index]
-                )
+                phrases: dataStore.phrases[index]
             )
             cartoons.append(cartoon)
         }
